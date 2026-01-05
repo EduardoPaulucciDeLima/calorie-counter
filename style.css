@@ -1,0 +1,125 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --bg-color: #000000;
+  --card-color: #64cc66;
+  --primary-color: #64cc66;
+  --text-color: #000000;
+  --border-color: #ffffff;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: var(--primary-color);
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  opacity: 0.9;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  background-color: var(--card-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+/* ===== TITLES ===== */
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+/* ===== GOAL ===== */
+.goal-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.goal-input input {
+  flex: 1;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(78, 154, 241);
+  transition: width 0.3s ease;
+}
+
+#goal-status {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+footer {
+    display: flex;
+    margin-left: 40%;
+    color: #ffffff;
+}
+
+/* ===== FORM ====*
